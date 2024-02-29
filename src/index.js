@@ -3466,4 +3466,8 @@ function getNRCTownshipByState(state){
         .sort((a, b) => a.name_en.localeCompare(b.name_en));
 }
 
-module.exports = { checkMyanmarNRC, MyanmarNRCData, MyanmarCitizenType, getNRCTownshipByState };
+function getStates(){
+    return Array(12).map((item, index) => index + 1);
+}
+
+module.exports = { checkMyanmarNRC, MyanmarNRCData, MyanmarCitizenType, getNRCTownshipByState, getStates };
