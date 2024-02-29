@@ -3467,7 +3467,7 @@ function getNRCTownshipByState(state){
 }
 
 function getStates(){
-    return Array(12).map((item, index) => index + 1);
+    return Array.from({ length: 12 }, (_, i) => i + 1)
 }
 
 module.exports = { checkMyanmarNRC, MyanmarNRCData, MyanmarCitizenType, getNRCTownshipByState, getStates };
