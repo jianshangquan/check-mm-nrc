@@ -2033,7 +2033,7 @@ const MyanmarNRCData = [
     },
     {
         "id": "255",
-        "name_en": "LaMata",
+        "name_en": "LaMaTa",
         "name_mm": "(လမတ) လမ်းမတော်",
         "nrc_code": "12",
         "created_at": "2019-01-31 20:03:06",
