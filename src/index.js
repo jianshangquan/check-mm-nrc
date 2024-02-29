@@ -3458,7 +3458,7 @@ function checkMyanmarNRC(nrc = '') {
         number,
         township,
         state,
-        isValid: townshipData.length > 0 && !isNaN(Number(number)),
+        isValid: townshipData.length > 0 && !isNaN(Number(number)) && MyanmarCitizenShortType.includes(citizenshipType),
         defination: townshipData[0] || null
     }
 }
