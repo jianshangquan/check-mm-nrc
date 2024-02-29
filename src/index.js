@@ -3414,6 +3414,10 @@ const MyanmarCitizenType = Object.freeze({
     }
 })
 
+const MyanmarCitizenShortType = Object.freeze([
+    'N', 'E', 'P', 'A', 'F', 'TH', 'G'
+]);
+
 function checkMyanmarNRC(nrc = '') {
 
     nrc = nrc.trim();
@@ -3470,4 +3474,4 @@ function getStates(){
     return Array.from({ length: 12 }, (_, i) => i + 1)
 }
 
-module.exports = { checkMyanmarNRC, MyanmarNRCData, MyanmarCitizenType, getNRCTownshipByState, getStates };
+module.exports = { checkMyanmarNRC, MyanmarNRCData, MyanmarCitizenType, getNRCTownshipByState, getStates, MyanmarCitizenShortType };
