@@ -3463,15 +3463,15 @@ function checkMyanmarNRC(nrc = '') {
     }
 }
 
-function getNRCTownshipByState(state){
+function getNRCTownshipByState(state) {
     state = state.toString();
     return MyanmarNRCData
         .filter(nrc => nrc.nrc_code == state)
         .sort((a, b) => a.name_en.localeCompare(b.name_en));
 }
 
-function getStates(){
-    return Array.from({ length: 12 }, (_, i) => i + 1)
+function getStates() {
+    return Array.from({ length: 14 }, (_, i) => i + 1)
 }
 
 module.exports = { checkMyanmarNRC, MyanmarNRCData, MyanmarCitizenType, getNRCTownshipByState, getStates, MyanmarCitizenShortType };
